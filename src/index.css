@@ -1,0 +1,16 @@
+@font-face {
+  font-family: NeueMontreal;
+  src: url(../public/fonts/neueMontreal-Regular.ttf);
+}
+
+@font-face {
+  font-family: FoundersGrotesk;
+  src: url(../public/fonts/foundersGrotesk-Semibold.ttf);
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-NeueMontreal: NeueMontreal, "sans-serif";
+  --font-FoundersGrotesk: FoundersGrotesk, "sans-serif";
+}
