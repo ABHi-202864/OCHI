@@ -1,4 +1,5 @@
 import React from 'react'
+import { MdArrowOutward } from "react-icons/md";
 
 function About() {
   return (
@@ -12,7 +13,7 @@ function About() {
           <div className='grid grid-cols-12 mt-25 pl-16 text-[#212121] font-NeueMontreal text-[17px] relative'>
 
             {/* DIV FOR TOP BORDER */}
-            <div className='absolute -top-5 left-0 w-full border-t-[1px]'></div>
+            <div className='absolute -top-5 left-0 w-full border-t-[0.1px] text-[#212121] opacity-30'></div>
 
             <div className='col-span-6'>
               <p>What you can expect:</p>
@@ -35,10 +36,22 @@ function About() {
             </div>
           </div>
 
-          <div className='grid grid-cols-12 px-16 mt-20'>
+
+          <div className='grid grid-cols-12 px-16 mt-20 relative'>
+
+            {/* DIV FOR TOP BORDER */}
+            <div className='absolute -top-5 left-0 w-full border-t-[0.1px] text-[#212121] opacity-30'></div>
+
             <div className='col-span-6'>
               <h2 className='text-[3.5rem] font-NeueMontreal text-black'>Our approach:</h2>
-              <button className='uppercase px-10 py-4 rounded-full bg-[#212121]'>Read More</button>
+              <button className='group flex items-center gap-8 uppercase px-4 py-2.5 rounded-full bg-[#212121] hover:bg-black transition-colors duration-300 ease-in-out cursor-pointer mt-2 text-white'>
+                Read More
+                <div
+                  className='w-8 h-8 bg-zinc-100 rounded-full flex items-center justify-center transition-transform duration-300 ease-in-out transform scale-50 group-hover:scale-125'
+                >
+                  <MdArrowOutward className='text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300' />
+                </div>
+              </button>
             </div>
 
             <div className='col-span-6'>

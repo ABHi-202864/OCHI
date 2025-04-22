@@ -7,7 +7,7 @@ import About from './components/About';
 
 function App() {
   return (
-    <div className='w-full h-screen text-white'>
+    <div className='w-full h-screen text-black'>
       <Navbar />
       <LandingPage />
       <Marque />
