@@ -4,6 +4,7 @@ import LandingPage from './components/LandingPage';
 import Marque from './components/Marque';
 import About from './components/About';
 import Eyes from './components/Eyes';
+import Featured from './components/Featured';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Marque />
       <About />
       <Eyes />
+      <Featured />
     </div>
   )
 }
