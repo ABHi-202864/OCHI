@@ -14,3 +14,40 @@
   --font-NeueMontreal: NeueMontreal, "sans-serif";
   --font-FoundersGrotesk: FoundersGrotesk, "sans-serif";
 }
+
+
+@layer utilities {
+
+  /* FOR BUTTON ANIMATION */
+  @keyframes slideUpIn {
+    0% {
+      transform: translateY(100%);
+    }
+
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes slideUpOut {
+    0% {
+      transform: translateY(0%);
+    }
+
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+
+  .animate-slide-up-in {
+    animation: slideUpIn 0.2s ease-in-out forwards;
+  }
+
+  .animate-slide-up-out {
+    animation: slideUpOut 0.2s ease-in-out forwards;
+  }
+
+  .reset-transform {
+    transform: translateY(500%);
+  }
+}
