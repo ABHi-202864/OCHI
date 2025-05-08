@@ -5,6 +5,8 @@ import Marque from './components/Marque';
 import About from './components/About';
 import Eyes from './components/Eyes';
 import Featured from './components/Featured';
+import Cards from './components/Cards';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
       <About />
       <Eyes />
       <Featured />
+      <Cards />
+      <Footer />
     </div>
   )
 }
