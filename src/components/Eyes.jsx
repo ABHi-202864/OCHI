@@ -84,7 +84,7 @@ function Eyes() {
 
   return (
     <div className="eyes w-full h-screen overflow-hidden">
-      <div className='relative w-full h-full bg-[url("./EyesSectionImg.jpg")] bg-cover bg-center'>
+      <div data-scroll data-scroll-speed="-.5" className='relative w-full h-full bg-[url("./EyesSectionImg.jpg")] bg-cover bg-center'>
         <div className="absolute flex gap-10 top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]">
           {[...Array(2)].map((_, index) => (
             <div

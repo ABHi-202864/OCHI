@@ -4,7 +4,7 @@ import { MdArrowOutward } from "react-icons/md";
 function About() {
   return (
     <>
-      <div className='bg-[#004D43]'>
+      <div className='bg-[#004D43] -mt-32'>
         <div className='w-full py-20 bg-[#CDEA68] rounded-tl-3xl rounded-tr-3xl'>
           <div>
             <p className='text-[3.5rem] font-NeueMontreal text-[#212121] leading-14 pl-16 pt-3 w-[85vw]'>Ochi is a strategic presentation agency for forward-thinking businesses that need to <u>raise funds</u>, <u>sell prod&shy;­ucts</u>, <u>ex&shy;plain com&shy;plex ideas</u>, and <u>hire great peo&shy;­ple</u>.</p>
