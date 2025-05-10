@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+
 
 function Featured() {
+
+  const [hoverOne, setHoverOne] = useState(false);
+  const [hoverTwo, setHoverTwo] = useState(false);
+  const [hoverThree, setHoverThree] = useState(false);
+  const [hoverFour, setHoverFour] = useState(false);
+
+
   return (
     <>
       <div className='w-full py-20'>
@@ -11,6 +20,7 @@ function Featured() {
         {/* DIV FOR TOP BORDER */}
         <div className='w-full border-t-[0.1px] my-12 text-[#212121] opacity-30'></div>
 
+        {/* BIND EACH TWO CARD */}
         <div className='cards relative flex gap-5 w-full px-14 cursor-pointer'>
           <div className="cardContainer w-1/2 h-[0vh]">
             <div className='flex items-center gap-2 mb-4'>
@@ -18,10 +28,26 @@ function Featured() {
               <span className='uppercase font-NeueMontreal text-sm text-[#212121]'>Salience Labs</span>
             </div>
 
-            <h1 className='absolute left-1/2 top-1/2 z-10 text-9xl font-FoundersGrotesk font-bold uppercase -translate-x-1/2 -translate-y-1/4 text-[#CDEA68]'>{"Salience Labs".split("").map((item, index) => <span className=''>{item}</span>)}
+            <h1
+              className='absolute left-1/2 top-1/2 z-10 text-9xl font-FoundersGrotesk font-bold uppercase -translate-x-1/2 -translate-y-1/4 text-[#CDEA68] overflow-hidden'
+            >
+              {"Salience Labs".split("").map((item, index) => (
+                <motion.span
+                  initial={{ y: "100%" }}
+                  animate={hoverOne ? ({ y: "0" }) : ({ y: "100%" })}
+                  transition={{ ease: [0.83, 0, 0.17, 1], delay: index * .02 }}
+                  className='inline-block'
+                >
+                  {item}
+                </motion.span>
+              ))}
             </h1>
-            <div className='card w-full rounded-xl hover:scale-95 transition-all ease-in-out duration-700'>
-              <img className='rounded-xl' src="./cardImg1.png" alt="" />
+            <div
+              onMouseEnter={() => setHoverOne(true)}
+              onMouseLeave={() => setHoverOne(false)}
+              className='card w-full rounded-xl hover:scale-95 transition-all ease-in-out duration-700 overflow-hidden'
+            >
+              <img className='rounded-xl hover:scale-110 transition-all ease-in-out duration-700' src="./cardImg1.png" alt="" />
             </div>
 
             {/* BUTTON ANIMATION */}
@@ -110,11 +136,26 @@ function Featured() {
               <span className='uppercase font-NeueMontreal text-sm text-[#212121]'>Cardboard Spaceship</span>
             </div>
 
-            <h1 className='absolute -right-28 top-1/2 z-10 text-9xl font-FoundersGrotesk font-bold uppercase -translate-x-1/2 -translate-y-1/4 text-[#CDEA68]  '>
-              {"Cardboard Spaceship".split("").map((item, index) => <span>{item}</span>)}
+            <h1
+              className='absolute -right-28 top-1/2 z-10 text-9xl font-FoundersGrotesk font-bold uppercase -translate-x-1/2 -translate-y-1/4 text-[#CDEA68] overflow-hidden'
+            >
+              {"Cardboard Spaceship".split("").map((item, index) => (
+                <motion.span
+                  initial={{ y: "100%" }}
+                  animate={hoverTwo ? ({ y: "0" }) : ({ y: "100%" })}
+                  transition={{ ease: [0.83, 0, 0.17, 1], delay: index * .02 }}
+                  className='inline-block'
+                >
+                  {item}
+                </motion.span>
+              ))}
             </h1>
-            <div className='card w-full rounded-xl hover:scale-95 transition-all ease-in-out duration-700'>
-              <img className='rounded-xl' src="./cardImg2.png" alt="" />
+            <div
+              onMouseEnter={() => setHoverTwo(true)}
+              onMouseLeave={() => setHoverTwo(false)}
+              className='card w-full rounded-xl hover:scale-95 transition-all ease-in-out duration-700 overflow-hidden'
+            >
+              <img className='rounded-xl hover:scale-110 transition-all ease-in-out duration-700' src="./cardImg2.png" alt="" />
             </div>
 
             {/* BUTTON ANIMATION */}
@@ -236,6 +277,7 @@ function Featured() {
           </div>
         </div>
 
+        {/* BIND EACH TWO CARD */}
         <div className='cards relative flex gap-5 w-full px-14 cursor-pointer mt-36'>
           <div className="cardContainer  w-1/2 h-[0vh]">
             <div className='flex items-center gap-2 mb-4'>
@@ -243,10 +285,26 @@ function Featured() {
               <span className='uppercase font-NeueMontreal text-sm text-[#212121]'>AH2 & Matt Horn</span>
             </div>
 
-            <h1 className='absolute left-1/2 top-1/2 z-10 text-9xl font-FoundersGrotesk font-bold uppercase -translate-x-1/2 -translate-y-1/4 text-[#CDEA68]'>{"AH2 & Matt Horn".split("").map((item, index) => <span className=''>{item}</span>)}
+            <h1
+              className='absolute left-1/2 top-1/2 z-10 text-9xl font-FoundersGrotesk font-bold uppercase -translate-x-1/2 -translate-y-1/4 text-[#CDEA68] overflow-hidden'
+            >
+              {"AH2 & Matt Horn".split("").map((item, index) => (
+                <motion.span
+                  initial={{ y: "100%" }}
+                  animate={hoverThree ? ({ y: "0" }) : ({ y: "100%" })}
+                  transition={{ ease: [0.83, 0, 0.17, 1], delay: index * .02 }}
+                  className='inline-block'
+                >
+                  {item}
+                </motion.span>
+              ))}
             </h1>
-            <div className='card w-full rounded-xl hover:scale-95 transition-all ease-in-out duration-700'>
-              <img className='rounded-xl' src="./cardImg3.png" alt="" />
+            <div
+              onMouseEnter={() => setHoverThree(true)}
+              onMouseLeave={() => setHoverThree(false)}
+              className='card w-full rounded-xl hover:scale-95 transition-all ease-in-out duration-700 overflow-hidden'
+            >
+              <img className='rounded-xl hover:scale-110 transition-all ease-in-out duration-700' src="./cardImg3.png" alt="" />
             </div>
 
             {/* BUTTON ANIMATION */}
@@ -297,11 +355,26 @@ function Featured() {
               <span className='uppercase font-NeueMontreal text-sm text-[#212121]'>Fyde</span>
             </div>
 
-            <h1 className='absolute right-3/4 top-1/2 z-10 text-9xl font-FoundersGrotesk font-bold uppercase -translate-x-1/2 -translate-y-1/4 text-[#CDEA68]'>
-              {"Fyde".split("").map((item, index) => <span>{item}</span>)}
+            <h1
+              className='absolute flex right-3/4 top-1/2 z-10 text-9xl font-FoundersGrotesk font-bold uppercase -translate-x-1/2 -translate-y-1/4 text-[#CDEA68] overflow-hidden'
+            >
+              {"Fyde".split("").map((item, index) => (
+                <motion.span
+                  initial={{ y: "100%" }}
+                  animate={hoverFour ? ({ y: "0" }) : ({ y: "100%" })}
+                  transition={{ ease: [0.83, 0, 0.17, 1], delay: index * .02 }}
+                  className='inline-block'
+                >
+                  {item}
+                </motion.span>
+              ))}
             </h1>
-            <div className='card w-full rounded-xl hover:scale-95 transition-all ease-in-out duration-700'>
-              <img className='rounded-xl' src="./cardImg4.png" alt="" />
+            <div
+              onMouseEnter={() => setHoverFour(true)}
+              onMouseLeave={() => setHoverFour(false)}
+              className='card w-full rounded-xl hover:scale-95 transition-all ease-in-out duration-700 overflow-hidden'
+            >
+              <img className='rounded-xl hover:scale-110 transition-all ease-in-out duration-700' src="./cardImg4.png" alt="" />
             </div>
 
             {/* BUTTON ANIMATION */}

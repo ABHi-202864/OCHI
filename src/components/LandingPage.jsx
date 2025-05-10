@@ -1,19 +1,25 @@
 import React from 'react'
 import { MdArrowOutward } from "react-icons/md";
+import { motion } from 'framer-motion';
 
 function LandingPage() {
   return (
     <>
-      <div className='w-full h-screen bg-[#F1F1F1] pt-1'>
+      <div data-scroll data-scroll-section data-scroll-speed="-.3" className='w-full h-screen bg-[#F1F1F1] pt-1'>
         <div className='textStructure mt-40 px-20'>
           {["We Create", "eye-opening", "presentations"].map((item, index) => {
             return (
               <div className='masker font-FoundersGrotesk'>
                 <div className='w-fit flex items-baseline overflow-hidden'>
                   {index === 1 && (
-                    <div
-                      className='mr-[1vw] w-[9vw] h-[5.32vw] bg-red-500 rounded-md'
-                    ></div>
+                    <motion.div
+                      initial={{ width: 0 }}
+                      animate={{ width: "9vw" }}
+                      transition={{ ease: [0.76, 0, 0.24, 1], duration: 1, delay: 1 }}
+                      className="mr-[1vw] w-[9vw] h-[5.32vw] rounded-md bg-[url('/content-image01.jpg')] bg-cover bg-center"
+                    >
+                    </motion.div>
+
                   )}
                   <h1 className='uppercase text-9xl tracking-wide leading-[.75]'>
                     {item}
