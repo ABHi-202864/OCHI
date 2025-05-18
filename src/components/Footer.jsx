@@ -20,10 +20,10 @@ function Footer() {
                 <div>
                   <ul>
                     <p className='mb-2'>S:</p>
-                    <li className='underline cursor-pointer'><a href=""></a>Instagram</li>
-                    <li className='underline cursor-pointer'><a href=""></a>Behance</li>
-                    <li className='underline cursor-pointer'><a href=""></a>Facebook</li>
-                    <li className='underline cursor-pointer'><a href=""></a>Linkedin</li>
+                    <li className='cursor-pointer'><a className='relative after:content-[""] after:absolute after:w-0 after:h-[1px] after:block after:mt-[.5px] after:right-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 hover:after:bg-black' href="">Instagram</a></li>
+                    <li className='cursor-pointer'><a className='relative after:content-[""] after:absolute after:w-0 after:h-[1px] after:block after:mt-[.5px] after:right-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 hover:after:bg-black' href="">Behance</a></li>
+                    <li className='cursor-pointer'><a className='relative after:content-[""] after:absolute after:w-0 after:h-[1px] after:block after:mt-[.5px] after:right-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 hover:after:bg-black' href="">Facebook</a></li>
+                    <li className='cursor-pointer'><a className='relative after:content-[""] after:absolute after:w-0 after:h-[1px] after:block after:mt-[.5px] after:right-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 hover:after:bg-black' href="">Linkedin</a></li>
                   </ul>
                 </div>
               </div>
@@ -32,17 +32,17 @@ function Footer() {
                 <div className='mt-8'>
                   <ul>
                     <p className='mb-2'>L:</p>
-                    <li className='underline cursor-pointer'><a href=""></a>202-1965 W 4th Ave</li>
-                    <li className='underline cursor-pointer'><a href=""></a>Vancouver, Canada</li>
-                    <li className='underline cursor-pointer mt-5'><a href=""></a>30 Chukarina St</li>
-                    <li className='underline cursor-pointer'><a href=""></a>Lviv, Ukraine</li>
+                    <li className='cursor-pointer'><a className='relative after:content-[""] after:absolute after:w-0 after:h-[1px] after:block after:mt-[.5px] after:right-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 hover:after:bg-black' href="">202-1965 W 4th Ave</a></li>
+                    <li className='cursor-pointer'><a className='relative after:content-[""] after:absolute after:w-0 after:h-[1px] after:block after:mt-[.5px] after:right-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 hover:after:bg-black' href="">Vancouver, Canada</a></li>
+                    <li className='cursor-pointer mt-5'><a className='relative after:content-[""] after:absolute after:w-0 after:h-[1px] after:block after:mt-[.5px] after:right-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 hover:after:bg-black' href="">30 Chukarina St</a></li>
+                    <li className='cursor-pointer'><a className='relative after:content-[""] after:absolute after:w-0 after:h-[1px] after:block after:mt-[.5px] after:right-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 hover:after:bg-black' href="">Lviv, Ukraine</a></li>
                   </ul>
                 </div>
 
                 <div className='mt-8'>
                   <ul>
                     <p className='mb-2'>E:</p>
-                    <li className='underline cursor-pointer'><a href=""></a>hello@ochi.design</li>
+                    <li className='cursor-pointer'><a className='relative after:content-[""] after:absolute after:w-0 after:h-[1px] after:block after:mt-[.5px] after:right-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 hover:after:bg-black' href="">hello@ochi.design</a></li>
                   </ul>
                 </div>
               </div>
@@ -50,12 +50,12 @@ function Footer() {
               <div className='mt-8 flex justify-end'>
                 <ul>
                   <p className='mb-2'>M:</p>
-                  <li className='underline cursor-pointer'><a href=""></a>Home</li>
-                  <li className='underline cursor-pointer'><a href=""></a>Services</li>
-                  <li className='underline cursor-pointer'><a href=""></a>Our work</li>
-                  <li className='underline cursor-pointer'><a href=""></a>About us</li>
-                  <li className='underline cursor-pointer'><a href=""></a>Insights</li>
-                  <li className='underline cursor-pointer'><a href=""></a>Contact us</li>
+                  <li className='cursor-pointer'><a className='relative after:content-[""] after:absolute after:w-0 after:h-[1px] after:block after:mt-[.5px] after:right-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 hover:after:bg-black' href="">Home</a></li>
+                  <li className='cursor-pointer'><a className='relative after:content-[""] after:absolute after:w-0 after:h-[1px] after:block after:mt-[.5px] after:right-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 hover:after:bg-black' href="">Services</a></li>
+                  <li className='cursor-pointer'><a className='relative after:content-[""] after:absolute after:w-0 after:h-[1px] after:block after:mt-[.5px] after:right-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 hover:after:bg-black' href="">Our work</a></li>
+                  <li className='cursor-pointer'><a className='relative after:content-[""] after:absolute after:w-0 after:h-[1px] after:block after:mt-[.5px] after:right-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 hover:after:bg-black' href="">About us</a></li>
+                  <li className='cursor-pointer'><a className='relative after:content-[""] after:absolute after:w-0 after:h-[1px] after:block after:mt-[.5px] after:right-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 hover:after:bg-black' href="">Insights</a></li>
+                  <li className='cursor-pointer'><a className='relative after:content-[""] after:absolute after:w-0 after:h-[1px] after:block after:mt-[.5px] after:right-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 hover:after:bg-black' href="">Contact us</a></li>
                 </ul>
               </div>
             </div>
@@ -78,11 +78,11 @@ function Footer() {
 
             <div className='col-span-3 font-NeueMontreal text-gray-300'>
               © ochi design 2025.
-              <a href="" className='underline'> Legal Terms</a>
+              <a href="" className='relative after:content-[""] after:absolute after:w-0 after:h-[1px] after:block after:mt-[.5px] after:right-0 after:bg-gray-300 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 hover:after:bg-gray-300'> Legal Terms</a>
             </div>
 
             <div className='col-span-3 justify-self-end font-NeueMontreal text-gray-300'>
-              <a href="" className='underline'>Website by Obys</a>
+              <a href="" className='relative after:content-[""] after:absolute after:w-0 after:h-[1px] after:block after:mt-[.5px] after:right-0 after:bg-gray-300 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 hover:after:bg-gray-300'>Website by Obys</a>
             </div>
           </div>
         </div>

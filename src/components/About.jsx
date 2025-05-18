@@ -28,10 +28,10 @@ function About() {
             <div className='col-span-2 grid items-end'>
               <ul>
                 <p className='mb-2'>S:</p>
-                <li className='underline cursor-pointer'><a href=""></a>Instagram</li>
-                <li className='underline cursor-pointer'><a href=""></a>Behance</li>
-                <li className='underline cursor-pointer'><a href=""></a>Facebook</li>
-                <li className='underline cursor-pointer'><a href=""></a>Linkedin</li>
+                <li className='cursor-pointer'><a className='relative after:content-[""] after:absolute after:w-0 after:h-[1px] after:block after:mt-[.5px] after:right-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 hover:after:bg-black' href="">Instagram</a></li>
+                <li className='cursor-pointer'><a className='relative after:content-[""] after:absolute after:w-0 after:h-[1px] after:block after:mt-[.5px] after:right-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 hover:after:bg-black' href="">Behance</a></li>
+                <li className='cursor-pointer'><a className='relative after:content-[""] after:absolute after:w-0 after:h-[1px] after:block after:mt-[1px] after:right-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 hover:after:bg-black' href="">Facebook</a></li>
+                <li className='cursor-pointer'><a className='relative after:content-[""] after:absolute after:w-0 after:h-[1px] after:block after:mt-[1px] after:right-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 hover:after:bg-black' href="">Linkedin</a></li>
               </ul>
             </div>
           </div>
