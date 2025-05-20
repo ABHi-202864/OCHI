@@ -7,7 +7,7 @@ import Eyes from './components/Eyes';
 import Featured from './components/Featured';
 import Cards from './components/Cards';
 import Footer from './components/Footer';
-import LocomotiveScroll from 'locomotive-scroll'; // FOR SMOOTH SCROLLING
+import LocomotiveScroll from 'locomotive-scroll'; // FROM THIS SITE --> https://scroll.locomotive.ca/docs#/
 
 
 function App() {
