@@ -5,13 +5,18 @@ import { motion } from 'framer-motion';
 function Marque() {
   return (
     <>
-      <div data-scroll data-scroll-section data-scroll-speed=".2" className="w-full bg-[#004D43] py-5 rounded-tl-3xl rounded-tr-3xl">
+      <div
+        data-scroll
+        data-scroll-section
+        data-scroll-speed=".2"
+        className="w-full bg-[#004D43] py-5 rounded-tl-3xl rounded-tr-3xl"
+      >
         <div className="relative overflow-hidden whitespace-nowrap">
           {/* top border */}
-          <div className="absolute top-20 left-0 w-full border-t-2 border-[#437C74] z-10" />
+          <div className="absolute top-2 md:top-20 left-0 w-full border-t-2 border-[#437C74] z-10" />
 
           {/* bottom border */}
-          <div className="absolute bottom-8 left-0 w-full border-b-2 border-[#437C74]  z-10" />
+          <div className="absolute bottom-0 md:bottom-8 left-0 w-full border-b-2 border-[#437C74]  z-10" />
 
           {/* scrolling text */}
           <div className="animate-marquee flex gap-10 text-[#FFFFFF]">

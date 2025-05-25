@@ -19,7 +19,7 @@ function App() {
     <div className='w-full h-screen text-black'>
       <Navbar />
       <LandingPage />
-      <Marque />
+      <Marque /> 
       <About />
       <Eyes />
       <Featured />

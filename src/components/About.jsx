@@ -7,15 +7,15 @@ function About() {
       <div className='bg-[#004D43] -mt-32'>
         <div className='w-full py-20 bg-[#CDEA68] rounded-tl-3xl rounded-tr-3xl'>
           <div>
-            <p className='text-[3.5rem] font-NeueMontreal text-[#212121] leading-14 pl-16 pt-3 w-[85vw]'>Ochi is a strategic presentation agency for forward-thinking businesses that need to <u>raise funds</u>, <u>sell prod&shy;­ucts</u>, <u>ex&shy;plain com&shy;plex ideas</u>, and <u>hire great peo&shy;­ple</u>.</p>
+            <p className='text-2xl md:text-[3.5rem] font-NeueMontreal text-[#212121] leading-14 pl-4 md:pl-16 pt-3 w-[85vw]'>Ochi is a strategic presentation agency for forward-thinking businesses that need to <u>raise funds</u>, <u>sell prod&shy;­ucts</u>, <u>ex&shy;plain com&shy;plex ideas</u>, and <u>hire great peo&shy;­ple</u>.</p>
           </div>
 
-          <div className='grid grid-cols-12 mt-25 pl-16 text-[#212121] font-NeueMontreal text-[17px] relative'>
+          <div className=' md:grid md:grid-cols-12 mt-25 pl-4 md:pl-16 text-[#212121] font-NeueMontreal text-[17px] relative'>
 
             {/* DIV FOR TOP BORDER */}
             <div className='absolute -top-5 left-0 w-full border-t-[0.1px] text-[#212121] opacity-30'></div>
 
-            <div className='col-span-6'>
+            <div className='col-span-6 mb-6 md:mb-0'>
               <p>What you can expect:</p>
             </div>
 
@@ -25,7 +25,7 @@ function About() {
               </p>
             </div>
 
-            <div className='col-span-2 grid items-end'>
+            <div className='col-span-2 grid items-end mt-6 md:mt-0'>
               <ul>
                 <p className='mb-2'>S:</p>
                 <li className='cursor-pointer'><a className='relative after:content-[""] after:absolute after:w-0 after:h-[1px] after:block after:mt-[.5px] after:right-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 hover:after:bg-black' href="">Instagram</a></li>

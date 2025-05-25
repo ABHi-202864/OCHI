@@ -3,7 +3,7 @@ import React from 'react';
 function Navbar() {
   return (
     <>
-      <div className='fixed z-[999] w-full px-14 py-5 font-NeueMontreal flex justify-between items-center backdrop-blur-md'>
+      <div className='fixed z-[999] w-full px-4 md:px-14 py-3 md:py-5 font-NeueMontreal flex justify-between items-center backdrop-blur-md'>
         <div className='logo'>
           <a href="">
             <svg width="72" height="30" viewBox="0 0 72 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -16,11 +16,15 @@ function Navbar() {
           </a>
         </div>
 
-        <div className='links flex gap-10'>
+        <div className='links hidden md:flex gap-10'>
           {["Services", "Our work", "About us", "Insights", "Contact us"].map((item, index) => (
             <a key={index} className={`text-lg font-light relative after:content-[""] after:absolute after:w-0 after:h-[2px] after:block after:mt-[2px] after:right-0 after:bg-black after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 hover:after:bg-black ${index === 4 && "ml-32"}`} href="" > {item}</a>
           ))}
         </div>
+
+        {/* MOBILE MENU */}
+        <img className='md:hidden' src="/menu_icon.svg" alt="" />
+
       </div >
     </>
   )
