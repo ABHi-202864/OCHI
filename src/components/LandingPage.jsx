@@ -3,25 +3,26 @@ import { MdArrowOutward } from "react-icons/md";
 import { motion } from 'framer-motion';
 
 function LandingPage() {
+
   return (
     <>
       <div data-scroll data-scroll-section data-scroll-speed="-.3" className='w-full h-screen bg-[#F1F1F1] pt-1'>
-        <div className='textStructure mt-40 px-20'>
+        <div className='textStructure mt-20 md:mt-40 md:px-20'>
           {["We Create", "eye-opening", "presentations"].map((item, index) => {
             return (
               <div className='masker font-FoundersGrotesk'>
-                <div className='w-fit flex items-baseline overflow-hidden'>
+                <div className='w-fit md:flex items-baseline overflow-hidden'>
                   {index === 1 && (
                     <motion.div
                       initial={{ width: 0 }}
-                      animate={{ width: "9vw" }}
+                      animate={{ width: window.innerWidth < 768 ? "28vw" : "9vw" }}
                       transition={{ ease: [0.76, 0, 0.24, 1], duration: 1, delay: 1 }}
-                      className="mr-[1vw] w-[9vw] h-[5.32vw] rounded-md bg-[url('/content-image01.jpg')] bg-cover bg-center"
+                      className="mt-2 md:mt-0 mr-[1vw] w-[9vw] h-14 md:h-[5.32vw] rounded-md bg-[url('/content-image01.jpg')] bg-cover bg-center"
                     >
                     </motion.div>
 
                   )}
-                  <h1 className='uppercase text-9xl tracking-wide leading-[.75]'>
+                  <h1 className='uppercase ml-2 md:ml-0 text-6xl md:text-9xl tracking-wide leading-[.75]'>
                     {item}
                   </h1>
                 </div>
@@ -30,9 +31,9 @@ function LandingPage() {
           })}
         </div>
 
-        <div className='border-t-[0.1px] border-gray-400 mt-24 flex justify-between items-center py-5 px-20'>
+        <div className='border-t-[0.1px] border-gray-400 mt-24 md:flex justify-between items-center py-5 px-4 md:px-20'>
           {["For public and private companies", "From the first pitch to IPO"].map((item, index) => (
-            <p className='text-md font-light font-NeueMontreal'>{item}</p>
+            <p className='text-md font-light font-NeueMontreal mb-8 md:mb-0'>{item}</p>
           ))}
 
           <div className='group start flex items-center gap-2'>
@@ -52,7 +53,7 @@ function LandingPage() {
             </div>
           </div>
         </div>
-      </div>
+      </div >
     </>
   )
 }
