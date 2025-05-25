@@ -7,7 +7,7 @@ function About() {
       <div className='bg-[#004D43] -mt-32'>
         <div className='w-full py-20 bg-[#CDEA68] rounded-tl-3xl rounded-tr-3xl'>
           <div>
-            <p className='text-2xl md:text-[3.5rem] font-NeueMontreal text-[#212121] leading-14 pl-4 md:pl-16 pt-3 w-[85vw]'>Ochi is a strategic presentation agency for forward-thinking businesses that need to <u>raise funds</u>, <u>sell prod&shy;­ucts</u>, <u>ex&shy;plain com&shy;plex ideas</u>, and <u>hire great peo&shy;­ple</u>.</p>
+            <p className='text-2xl md:text-[3.5rem] font-NeueMontreal text-[#212121] md:leading-14 pl-4 md:pl-16 pt-20 md:pt-3 w-[85vw]'>Ochi is a strategic presentation agency for forward-thinking businesses that need to <u>raise funds</u>, <u>sell prod&shy;­ucts</u>, <u>ex&shy;plain com&shy;plex ideas</u>, and <u>hire great peo&shy;­ple</u>.</p>
           </div>
 
           <div className=' md:grid md:grid-cols-12 mt-25 pl-4 md:pl-16 text-[#212121] font-NeueMontreal text-[17px] relative'>
@@ -37,15 +37,15 @@ function About() {
           </div>
 
 
-          <div className='grid grid-cols-12 px-16 mt-20 relative'>
+          <div className='md:grid grid-cols-12 px-4 md:px-16 mt-20 relative'>
 
             {/* DIV FOR TOP BORDER */}
             <div className='absolute -top-5 left-0 w-full border-t-[0.1px] text-[#212121] opacity-30'></div>
 
             <div className='col-span-6'>
-              <h2 className='text-[3.5rem] font-NeueMontreal text-black'>Our approach:</h2>
-              <button className='group flex items-center gap-8 uppercase px-4 py-2.5 rounded-full bg-[#212121] hover:bg-black transition-colors duration-300 ease-in-out cursor-pointer mt-2 text-white'>
-                Read More
+              <h2 className='text-4xl mb-4 md:text-[3.5rem] font-NeueMontreal text-black'>Our approach:</h2>
+              <button className='group flex items-center gap-8 uppercase px-4 py-2.5 rounded-full bg-[#212121] hover:bg-black transition-colors duration-300 ease-in-out cursor-pointer mb-4 text-white'>
+                <a href="">Read More</a>
                 <div
                   className='w-8 h-8 bg-zinc-100 rounded-full flex items-center justify-center transition-transform duration-300 ease-in-out transform scale-50 group-hover:scale-125'
                 >

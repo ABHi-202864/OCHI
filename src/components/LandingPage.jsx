@@ -40,7 +40,7 @@ function LandingPage() {
             <div
               className='px-3.5 py-1 border-[1px] rounded-full group-border-zinc-800 uppercase font-NeueMontreal font-medium text-md cursor-pointer group-hover:bg-zinc-800 group-hover:text-white transition-colors ease-in-out duration-500'
             >
-              Start the project
+              <a href="">Start the project</a>  
             </div>
 
             {/* Arrow icon with inner scaling background */}
